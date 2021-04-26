@@ -1,0 +1,30 @@
+$input-height: 30px;
+
+.todo-form {
+  width: 80vw;
+  margin: auto;
+  padding: 10px;
+  min-height: 30px;
+  .todo-input, .priority-input {
+    min-height: $input-height;
+    border: none;
+    border-bottom: black solid 1px;
+  }
+  .todo-input {
+    width: 60%;
+    margin-right: 10px;
+  }
+  .priority-input {
+    margin: 10px;
+  }
+  .add-btn {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+  }
+}
+
+.sortby-select {
+  min-height: $input-height;
+  margin-left: 10px;
+}

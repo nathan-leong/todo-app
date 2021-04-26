@@ -1,0 +1,55 @@
+$item-card-height: 50px;
+
+.item-card {
+  height: $item-card-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  background: linear-gradient(90deg, rgba(236,236,236,1) 0%, rgba(231,231,231,1) 100%);
+  
+  //to do item card with special spacing
+  &.todo-item-card {
+    justify-content: space-between;
+  }
+
+  .item-priority {
+    padding-left: 10px;
+    padding-right: 10vw;
+  }
+
+  .item-todo {
+    max-width: 40vw;
+  }
+
+  .item-card-btn-group {
+    height: 100%;
+    float: right;
+
+    button {
+      height: 100%;
+      width: 8vw;
+      border: none;
+      cursor: pointer;
+
+      &.delete-btn {
+        background-color: #ff4848;
+        &:hover {
+          background-color: #ff8282;
+        }
+      }
+      &.complete-btn {
+        background-color: #50fc3e;
+        &:hover {
+          background-color: #8eff82;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    p {
+      font-weight: bold;
+    }
+  }
+}

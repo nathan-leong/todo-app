@@ -1,0 +1,17 @@
+.header {
+  padding-left: 30px;
+  background-color: rgb(34, 191, 243);
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .header-item {
+    font-size: calc(10px + 2vmin);
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    &:hover {
+      color: rgb(228, 228, 255)
+    }
+  }
+}
